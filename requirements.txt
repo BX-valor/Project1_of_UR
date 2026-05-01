@@ -1,0 +1,24 @@
+# Acrobot Swing-up and Balance Control - Python Dependencies
+# 安装命令: pip install -r requirements.txt
+
+# ========== 核心科学计算库（必需）==========
+numpy>=1.21.0
+scipy>=1.7.0
+
+# ========== 可视化库（必需）==========
+matplotlib>=3.4.0
+
+# ========== 动画生成（可选，推荐安装）==========
+# matplotlib 已内置 pillow writer 支持 GIF 输出
+# 若需更多视频格式支持，可安装 imageio/imageio-ffmpeg
+imageio>=2.9.0
+
+# ========== Jupyter Notebook 支持（可选，用于 report.ipynb）==========
+ipython>=7.30.0
+jupyterlab>=3.0.0
+notebook>=6.4.0
+
+# ========== 开发工具（可选）==========
+# 代码格式化与静态检查
+# black>=22.0.0
+# pylint>=2.12.0
