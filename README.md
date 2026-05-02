@@ -126,17 +126,17 @@ $$v = \ddot{\theta}_2^{des} = -k_p \theta_2 - k_d \dot{\theta}_2 - k_E \dot{\the
 
 ### LQR 控制器
 
-在目标平衡点 $x^{*} = [\pi, 0, 0, 0]^{T}$ 附近线性化，求解代数 Riccati 方程：
+在目标平衡点 $x^{\ast} = [\pi, 0, 0, 0]^{T}$ 附近线性化，求解代数 Riccati 方程：
 
 $$A^{T} P + PA - PB R^{-1} B^{T} P + Q = 0$$
 
-LQR 增益：$K = R^{-1} B^{T} P$，控制律：$u = -K(x - x^{*})$
+LQR 增益：$K = R^{-1} B^{T} P$，控制律：$u = -K(x - x^{\ast})$
 
 ### 切换逻辑
 
 基于 LQR Cost-to-Go 的切换准则：
 
-$$J(x) = (x - x^{*})^{T} P (x - x^{*}) < \epsilon$$
+$$J(x) = (x - x^{\ast})^{T} P (x - x^{\ast}) < \epsilon$$
 
 同时要求切换时速度和角度在允许范围内，确保 LQR 在其有效吸引域内接管控制。
 
