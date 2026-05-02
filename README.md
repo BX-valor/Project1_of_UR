@@ -130,7 +130,7 @@ $$v = \ddot{\theta}_2^{des} = -k_p \theta_2 - k_d \dot{\theta}_2 - k_E \dot{\the
 
 $$A^{T} P + PA - PB R^{-1} B^{T} P + Q = 0$$
 
-LQR 增益：$K = R^{-1} B^{T} P$，控制律：$u = -K(x - x^{\ast})$
+LQR 增益： $K = R^{-1} B^{T} P$，控制律： $u = -K(x - x^{\ast})$
 
 ### 切换逻辑
 
